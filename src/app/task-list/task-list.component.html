@@ -1,0 +1,11 @@
+<h2>Existing Tasks</h2>
+<div id="taskList">
+  <app-task-list-item
+    class="task-list-item-wrapper"
+    *ngFor="let task of tasks"
+    name={{task.name}}
+    date={{task.date}}
+    assigned={{task.assigned}}
+  >
+  </app-task-list-item>
+</div>

@@ -1,0 +1,28 @@
+<h2>Create a Task</h2>
+<form [formGroup]="form">
+  <div>
+    <label>Task Name</label>
+  </div>
+  <input type = "text" 
+        name = "name" 
+        formControlName="name" 
+        #name>
+  <div>
+    <label>Date</label>
+  </div>
+  <input type = "date" 
+    name = "date"
+    formControlName="date" 
+    #date>
+  <div>
+    <label>Assigned To</label>
+  </div>
+  <input type = "text" 
+    name = "assigned" 
+    formControlName="assigned" 
+    #assigned>
+  <input type="submit"
+    value="Submit"
+    (click)="onSubmission(name.value, date.value, assigned.value)"
+    #submit>
+</form>

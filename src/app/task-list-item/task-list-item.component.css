@@ -1,0 +1,31 @@
+.task-list-item {
+    padding: 2vh 4vh;
+}
+
+.task-name {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.task-date {
+    font-size: smaller;
+    color: rgb(160, 160, 160);
+    width: 20%;
+}
+
+.task-assigned {
+    float: right;
+    width: 40%;
+    text-align: end;
+}
+
+.task-name,
+.task-assigned {
+    font-weight: bolder;
+}
+
+.task-name,
+.task-date,
+.task-assigned {
+    display: inline-block;
+}

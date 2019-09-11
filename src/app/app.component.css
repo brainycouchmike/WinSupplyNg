@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#hero {
+    text-align:left;
+    margin: 1vh 5% auto;
+    border: 1vh solid rgb(226, 226, 226);
+    border-bottom: none;
+    background-color: rgb(240, 240, 240);
+}
+
+#hero h1 {
+    display: inline-block;
+    margin-left: 4vh;
+}
+
+.col h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero h1 #version {
+    font-size: 50%;
+    clear: left;
+    display: block;
+    color: rgb(200, 200, 200);
+    margin-top: -1vh;
+}
+
+.col-container {
+    display: flex;
+    width: 90%; margin: 0 5%;
+}
+.col {
+    flex: 1;
+    padding: 4vh;
+    padding-top: 0;
+    border: 1vh solid rgb(240, 240, 240);
+    border-bottom: 5vh solid rgb(240, 240, 240);
+    border-top: none;
+}
+
+@media only screen and (max-width: 740px) {
+    .col-container {
+        display: block;
+    }
+    .col {
+      display: block;
+      width: 100%;
+      padding-top: 1vh;
+    }
+  }
