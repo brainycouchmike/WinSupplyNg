@@ -9,7 +9,7 @@ import { TaskServiceService } from '../task-service.service';
 })
 export class FormComponent implements OnInit {
 
-  protected form: FormGroup;
+  public form: FormGroup;
 
   constructor(private builder: FormBuilder, private tasks: TaskServiceService) {
     this.initForm();

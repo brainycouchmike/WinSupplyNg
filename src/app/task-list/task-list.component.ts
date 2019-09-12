@@ -9,7 +9,7 @@ import { TaskServiceService } from '../task-service.service';
 })
 export class TaskListComponent implements OnInit {
 
-  protected tasks: TaskListItemComponent[];
+  public tasks: TaskListItemComponent[];
 
   constructor(private taskProvider: TaskServiceService) { }
 
